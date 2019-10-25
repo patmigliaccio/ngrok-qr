@@ -1,0 +1,29 @@
+{
+  "name": "ngrok-qr",
+  "version": "0.1.0",
+  "description": "A cli tool that wraps `ngrok` and generates a QR code for the forwarded URL.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ngrok",
+    "qr",
+    "code",
+    "cli"
+  ],
+  "author": "Pat Migliaccio <pat@patmigliaccio.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "ngrok": "^3.2.5",
+    "portfinder": "^1.0.25",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {},
+  "preferGlobal": true,
+  "bin": {
+    "ngrok-cli": "./index.js"
+  }
+}
