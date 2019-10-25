@@ -1,6 +1,6 @@
 {
   "name": "ngrok-qr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A cli tool that wraps `ngrok` and generates a QR code for the forwarded URL.",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,6 @@
   "devDependencies": {},
   "preferGlobal": true,
   "bin": {
-    "ngrok-cli": "./index.js"
+    "ngrok-qr": "./index.js"
   }
 }
