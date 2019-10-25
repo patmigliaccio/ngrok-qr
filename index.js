@@ -4,7 +4,6 @@
 
 const ngrok = require("ngrok");
 const qrcode = require("qrcode-terminal");
-const portfinder = require("portfinder");
 const chalk = require("chalk");
 
 async function main() {
@@ -12,16 +11,8 @@ async function main() {
   const args = argv.slice(2);
 
   const options = {
-    port: args && args.length ? args[0] : null
+    port: args && args.length ? args[0] : 3000
   };
-
-  if (!options.port) {
-    options.port = await new Promise(resolve =>
-      portfinder.getPort({ port: 3000 }, (err, port) =>
-        err ? reject(err) : resolve(port)
-      )
-    );
-  }
 
   const url = await ngrok.connect(options.port);
 
