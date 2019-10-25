@@ -1,19 +1,27 @@
 {
   "name": "ngrok-qr",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A cli tool that wraps `ngrok` and generates a QR code for the forwarded URL.",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./index.js"
   },
   "keywords": [
     "ngrok",
     "qr",
     "code",
-    "cli"
+    "cli",
+    "localhost",
+    "tunneling"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patmigliaccio/ngrok-qr.git"
+  },
   "author": "Pat Migliaccio <pat@patmigliaccio.com>",
+  "bugs": {
+    "url": "https://github.com/patmigliaccio/ngrok-qr/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.2",
